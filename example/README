@@ -1,0 +1,56 @@
+To run example job batch, do the following in pyrasol/example directory:
+
+>pyra create test.job.list
+  Created 200 jobs in 1 batches:
+	unnamed : 200 jobs
+  email notifications enabled
+
+>pyra push
+  Started pyrasol daemon and pushed 2 jobs.
+
+>pyra time 
+  pyrasol superbatch info:
+	1 running
+	5 of 200 completed
+	4 of 200 crashed
+	running time: 00:01:10
+	wall clock: 00:00:55
+  jobs on nodes: (node:jobs)
+	localhost:10
+  unnamed	[*X                                              ] 9 of 200 jobs
+  (complete = '*', running = 'r', crashed = 'X')
+
+>pyra maxjob 30
+  Max job set to 30
+
+>pyra time
+  pyrasol superbatch info:
+	30 running
+	113 of 200 completed
+	39 of 200 crashed
+	running time: 00:19:08
+	wall clock: 00:06:56
+  jobs on nodes: (node:jobs)
+	localhost:183
+  unnamed	[***************************XXXXXXXXXrrrrrrr     ] 152 of 200 jobs
+  (complete = '*', running = 'r', crashed = 'X')
+
+...
+
+>pyra time
+  pyrasol superbatch info:
+	0 running
+	147 of 200 completed
+	53 of 200 crashed
+	running time: 00:25:21
+	wall clock: 00:07:16
+  jobs on nodes: (node:jobs)
+	localhost:200
+  unnamed	[***********************************XXXXXXXXXXXXX] 200 of 200 jobs
+  (complete = '*', running = 'r', crashed = 'X')
+
+Batch of jobs is finished. 
+
+>pyra clean
+  Cleaned up all batch temporary data.
+
