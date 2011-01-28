@@ -21,7 +21,7 @@ Requirements:
   2) A need for speed!
 
 Example:
-  See README in pyrasol/example directory for instruction on how to run example batch. The example provides
+  See README in pyrasol/example directory for instructions on how to run example batch. The example provides
   an example batch list and a test program (testpyra.py) to simulate using pyrasol to run a batch of 
   crash-prone jobs with varying run times.
 
