@@ -1,0 +1,31 @@
+pyrasol - an easy-to-use, python-based batch system for running distributed jobs on multi-core machines. 
+  by Zack Sanborn, Stephen Benz.
+
+Usage:
+  pyra [command]
+
+Commands:
+  create job.list  : create a batch of jobs from file
+  clean            : cleans up tmp files
+  push             : push jobs
+  time             : check time / status of running jobs
+  stop             : kill all running jobs and stop pyrasol
+  maxjob INT       : set max jobs
+  maxjobtime INT   : set max job time in seconds
+  notification TYPE: enable/disable notification (options: prowl,email)
+  crashed          : list crashed jobs
+  inspect batch.gz : compute summary of batch
+
+Requirements:
+  1) Python 2.4.3 and above
+  2) A need for speed!
+
+Example:
+  See README in pyrasol/example directory for instruction on how to run example batch. The example provides
+  an example batch list and a test program (testpyra.py) to simulate using pyrasol to run a batch of 
+  crash-prone jobs with varying run times.
+
+
+
+
+ 
