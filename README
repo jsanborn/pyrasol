@@ -20,6 +20,10 @@ Requirements:
   1) Python 2.4.3 and above
   2) A need for speed!
 
+Installation:
+  1) Put directory containing pyrasol in your PATH. 
+  2) Set pyra.py and pyrasol.py to be executable, if not already. 
+
 Example:
   See README in pyrasol/example directory for instructions on how to run example batch. The example provides
   an example batch list and a test program (testpyra.py) to simulate using pyrasol to run a batch of 
