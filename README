@@ -29,7 +29,11 @@ Example:
   an example batch list and a test program (testpyra.py) to simulate using pyrasol to run a batch of 
   crash-prone jobs with varying run times.
 
+Credits:
+Pyrasol is inspired by parasol, a batch system developed by Jim Kent & the UCSC Genome Browser group. 
 
+License:
+MIT License
 
 
  
